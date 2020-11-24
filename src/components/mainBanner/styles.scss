@@ -1,0 +1,71 @@
+$background-color: #03ffa5;
+$slash-color: #ffffff;
+$text-color: #000000;
+
+.main-banner {
+  width: 100%;
+  background-color: $background-color;
+
+  .wrapper-banner {
+    max-width: 1440px;
+    max-height: 560px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    margin: 0 auto;
+
+    .text-banner {
+      width: 40%;
+      padding: 10px;
+
+      h1 {
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 77px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: uppercase;
+
+        margin: 10px 0;
+
+        position: relative;
+
+        &:before {
+          content: "//";
+          position: absolute;
+          left: -75px;
+          color: $slash-color;
+        }
+      }
+      p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 10px 0;
+        padding: 0 108px 0 0;
+      }
+      a {
+        text-decoration: none;
+        color: $text-color;
+        display: block;
+        border: 1px solid;
+        border-radius: 6px;
+
+        width: 196px;
+        height: 48px;
+        margin: 30px 0;
+        padding: 12px 0px 0px 24px;
+      }
+    }
+
+    img {
+      width: 35%;
+      max-height: 100%;
+      margin-right: 20px;
+    }
+  }
+}
