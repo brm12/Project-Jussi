@@ -1,87 +1,100 @@
-.our-solution {
-  padding: 30px;
-  margin-left: 10px;
+$base-color: #000000;
 
-  .wrapper-our-solution {
-    max-width: 1440px;
+#page-home {
+  font-family: "Barlow";
 
-    padding: 20px 60px;
-    margin: 0 auto;
+  h1.products {
+    color: $base-color;
+    text-transform: uppercase;
 
-    .text-title {
+    .icon {
+      color: #03ffa5;
+      font-family: Barlow;
+      font-style: normal;
       font-weight: bold;
       font-size: 32px;
       line-height: 40px;
-      margin-bottom: 25px;
-      &::before {
-        content: "//";
+      text-transform: uppercase;
+    }
+  }
+
+  .productList {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+
+  .aboutUs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    .text {
+      width: 35%;
+      padding-right: 5%;
+      box-sizing: border-box;
+
+      h2 {
+        font-size: 48px;
+        text-transform: uppercase;
+        margin-top: 0;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 25px;
+        padding-right: 16%;
+      }
+
+      a {
         display: inline-block;
-        color: #03ffa5;
-        margin-right: 10px;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 6px;
+        padding: 10px 24px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #000000;
+        text-align: center;
+        margin-top: 25px;
+      }
+    }
+
+    .image {
+      width: 65%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .contactArea {
+    background-color: #ee0e7d;
+    color: #ffffff;
+    height: 480px;
+    text-align: center;
+    padding: 136px 0;
+    box-sizing: border-box;
+
+    p.infoStore {
+      font-size: 32px;
+      max-width: 676px;
+      margin: 0 auto 40px auto;
+      text-transform: uppercase;
+    }
+
+    p.infoContact {
+      span {
+        font-size: 16px;
+      }
+
+      a {
+        display: block;
+        font-size: 32px;
+        color: #ffffff;
+        text-decoration: none;
       }
     }
   }
 }
-
-// `
-// export const SolucaoWrapper = styled.div`
-//   width: 23%;
-
-//   border: 1px solid var(--color-grey);
-//   border-radius: 4px;
-
-//   padding: 20px;
-
-//   h4{
-//     font-size: 16px;
-//     margin: 10px 16px;
-//   }
-
-//   p{
-//     font-size: 12px;
-//     margin: 10px 16px;
-
-//     color: var(--color-pink);
-//   }
-//   ul{
-//     margin-left: 28px;
-//     list-style: disc;
-//   }
-//   ul >li{
-//     font-size: 12px;
-//     color: var(--color-dark-grey);
-//     margin: 3px 2px;
-//   }
-
-//   a{
-//     display: block;
-//     width: 95%;
-//     height: 48px;
-//     text-align: center;
-//     text-decoration: none;
-
-//     color: var(--color-black);
-//     background-color: var(--color-green);
-
-//     border-radius: 6px;
-//     margin: 20px auto;
-//     padding: 13px 0;
-//   }
-
-//   @media (max-width: 768px){
-//     width: 100%;
-//     margin-bottom: 10px;
-//   }
-
-// `
-// export const ID = styled.div`
-//   background-color: var(--color-grey);
-//   width: 100px;
-//   height: 100px;
-//   border-radius: 50%;
-
-//   font-size:32px;
-//   text-align: center;
-//   line-height: 3;
-//   margin: 10px 10px 50px 10px;
-// `
