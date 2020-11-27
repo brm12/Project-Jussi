@@ -1,0 +1,54 @@
+.newsletter {
+  height: 430px;
+  padding: 60px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000000;
+
+  p {
+    width: 676px;
+    margin: 0 0 50px 0;
+    font-size: 32px;
+    font-weight: bolder;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+
+    span {
+      color: #ffffff;
+      margin-right: 25px;
+      font-size: 32px;
+    }
+  }
+  .newsletterBox {
+    display: flex;
+    justify-content: space-between;
+    width: 502px;
+    border-bottom: 1px solid #03ffa5;
+    padding-bottom: 20px;
+    font-weight: bolder;
+
+    input {
+      background: transparent;
+      font-size: 16px;
+      font-weight: bolder;
+      border: none;
+      color: #ffffff;
+      width: 100%;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    a {
+      color: #03ffa5;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 16px;
+    }
+  }
+}

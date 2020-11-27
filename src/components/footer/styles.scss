@@ -1,0 +1,34 @@
+$colors: (
+  "black": #000,
+  "dark-grey": #5b5b5b,
+  "grey": #f2f2f2,
+  "primary": #03ffa5,
+  "secondary": #ee0e7d,
+  "white": #ffff,
+);
+
+.footer {
+  background-color: map-get($colors, "black");
+  padding: 0px 0;
+
+  .wrapper-footer {
+    max-width: 1440px;
+    margin: auto;
+    padding: 20px 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .social-media {
+      display: flex;
+
+      .media {
+        margin-right: 17px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
