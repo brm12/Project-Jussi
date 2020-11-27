@@ -1,45 +1,35 @@
-import React, { useEffect, useContext } from "react";
-import Card from "../../components/card";
-import Product from "../../components/product";
-import { AppContext } from "../../productFetch/index";
-import api from "../../domain/api/api";
+import React, { useState, useEffect } from "react";
 import "./styles.scss";
+import data from "../../api/api";
 
 const OurSolution = () => {
-  const { state, setProductList } = useContext(AppContext);
+  const [products, setProdutos] = useState([]);
 
   useEffect(() => {
-    api
-      .get(`/products.json?brand=essie`)
-      .then((response) => {
-        setProductList(response.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    setProdutos(data);
   }, []);
 
   return (
-    <div id='page-home'>
-      <Card>
-        <h1 className='products'>
-          <span className='icon'>//</span>&nbsp;
-          <span className='text'>Nossas soluções</span>
-        </h1>
-        <div className='productList'>
-          {state.length > 0 &&
-            state.map((product) => (
-              <Product key={product.id} product={product} />
+    <div className='our-solution'>
+      <div className='wrapper-our-solution'>
+        <div className='text-title'>Nossas soluções</div>
+        <div className='content'>
+          {products.length > 0 &&
+            products.map((product) => (
+              <div className='product-wrapper' key={product.id}>
+                <div className='id'> {product.id} </div>
+                <h4>{product.title}</h4>
+                <p>{product.description}</p>
+                <ul>
+                  <li>{product.list.li01}</li>
+                  <li>{product.list.li02}</li>
+                  <li>{product.list.li03}</li>
+                </ul>
+                <a href='/'>Ver solução</a>
+              </div>
             ))}
         </div>
-      </Card>
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      </div>
     </div>
   );
 };

@@ -18,7 +18,7 @@ $text-color: #000000;
     margin: 0 auto;
 
     .text-banner {
-      width: 37%;
+      width: 40%;
       padding: 10px;
 
       h1 {
@@ -38,7 +38,7 @@ $text-color: #000000;
           content: "//";
           position: absolute;
           left: -75px;
-          color: #ffffff;
+          color: $slash-color;
         }
       }
       p {
@@ -50,7 +50,7 @@ $text-color: #000000;
       }
       a {
         text-decoration: none;
-        color: #000000;
+        color: $text-color;
         display: block;
         border: 1px solid;
         border-radius: 6px;
