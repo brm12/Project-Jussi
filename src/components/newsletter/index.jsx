@@ -7,7 +7,7 @@ const Newsletter = () => {
       <p>
         <span>//</span>receba novidades da nossa área de produtos digitais.
       </p>
-      <div className='newsletterBox'>
+      <div className='newsletter-wrapper'>
         <input type='text' placeholder='Digite seu e-mail' />
         <a href='#'>Cadastrar</a>
       </div>

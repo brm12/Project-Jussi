@@ -3,12 +3,12 @@ import "./styles.scss";
 
 const Contact = () => {
   return (
-    <div className='contactArea'>
-      <p className='infoStore'>
+    <div className='contact'>
+      <p className='info'>
         Essa loja foi construída usando uma das nossas soluções da plataforma
         VTEX. tenha a sua.
       </p>
-      <p className='infoContact'>
+      <p className='info-contact'>
         <span>Entre em contato</span>
         <a href='mailto:comercial@jussi.com.br'>comercial@jussi.com.br</a>
       </p>

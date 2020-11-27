@@ -1,100 +1,10 @@
 $base-color: #000000;
 
-#page-home {
+#our-solution {
   font-family: "Barlow";
 
   h1.products {
     color: $base-color;
     text-transform: uppercase;
-
-    .icon {
-      color: #03ffa5;
-      font-family: Barlow;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 32px;
-      line-height: 40px;
-      text-transform: uppercase;
-    }
-  }
-
-  .productList {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 25% 25% 25% 25%;
-  }
-
-  .aboutUs {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-
-    .text {
-      width: 35%;
-      padding-right: 5%;
-      box-sizing: border-box;
-
-      h2 {
-        font-size: 48px;
-        text-transform: uppercase;
-        margin-top: 0;
-      }
-
-      p {
-        font-size: 16px;
-        line-height: 25px;
-        padding-right: 16%;
-      }
-
-      a {
-        display: inline-block;
-        border: 1px solid #000000;
-        box-sizing: border-box;
-        border-radius: 6px;
-        padding: 10px 24px;
-        text-decoration: none;
-        font-weight: bold;
-        color: #000000;
-        text-align: center;
-        margin-top: 25px;
-      }
-    }
-
-    .image {
-      width: 65%;
-
-      img {
-        width: 100%;
-      }
-    }
-  }
-
-  .contactArea {
-    background-color: #ee0e7d;
-    color: #ffffff;
-    height: 480px;
-    text-align: center;
-    padding: 136px 0;
-    box-sizing: border-box;
-
-    p.infoStore {
-      font-size: 32px;
-      max-width: 676px;
-      margin: 0 auto 40px auto;
-      text-transform: uppercase;
-    }
-
-    p.infoContact {
-      span {
-        font-size: 16px;
-      }
-
-      a {
-        display: block;
-        font-size: 32px;
-        color: #ffffff;
-        text-decoration: none;
-      }
-    }
   }
 }

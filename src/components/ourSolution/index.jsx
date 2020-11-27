@@ -10,9 +10,10 @@ const OurSolution = () => {
 
   useEffect(() => {
     api
-      .get(`/products.json?brand=essie`)
+      .get(`/users`)
       .then((response) => {
         setProductList(response.data);
+        console.log(response.data);
       })
       .catch((err) => {
         console.log(err);
@@ -20,7 +21,7 @@ const OurSolution = () => {
   }, []);
 
   return (
-    <div id='page-home'>
+    <div id='our-solution'>
       <Card>
         <h1 className='products'>
           <span className='icon'>//</span>&nbsp;

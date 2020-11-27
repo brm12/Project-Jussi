@@ -1,14 +1,7 @@
-$colors: (
-  "black": #000,
-  "dark-grey": #5b5b5b,
-  "grey": #f2f2f2,
-  "primary": #03ffa5,
-  "secondary": #ee0e7d,
-  "white": #ffff,
-);
+$base-color-black: #000;
 
 .footer {
-  background-color: map-get($colors, "black");
+  background-color: $base-color-black;
   padding: 0px 0;
 
   .wrapper-footer {
