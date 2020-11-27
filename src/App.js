@@ -1,19 +1,9 @@
-import Header from "./components/header";
-import MainBanner from "./components/mainBanner";
-import LogoBar from "./components/logoBar";
-import OurSolution from "./components/ourSolution";
-import "./styles/globalStyles.scss";
+import React from "react";
+import Routes from "./routes";
 import "./App.css";
 
 function App() {
-  return (
-    <>
-      <Header />
-      <MainBanner />
-      <LogoBar />
-      <OurSolution />
-    </>
-  );
+  return <Routes />;
 }
 
 export default App;

@@ -1,15 +1,36 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import "./styles.scss";
-import search from "../../assets/pictures/search.svg";
 import shoppingCart from "../../assets/pictures/shopping-cart.svg";
-import logo from "../../assets/logo/logoJussi.svg";
+import Logo from "../../assets/logo/logoJussi.svg";
+import { AppContext } from "../../productFetch/index";
+import api from "../../domain/api/api";
+import Search from "../../assets/pictures/search.svg";
 
 const Header = () => {
+  const [searchValue, setSearchValue] = useState("");
+  const { setProductList } = useContext(AppContext);
+
+  function search() {
+    if (searchValue.length > 3) {
+      api
+        .get(`${searchValue}.json`)
+        .then((response) => {
+          setProductList(response.data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  }
+
+  function handleSearch(event) {
+    setSearchValue(event.target.value);
+  }
   return (
     <div className='header'>
       <div className='wrapper-content'>
         <div className='wrapper-left'>
-          <img src={logo} alt='Logo' />
+          <img src={Logo} alt='Logo' />
           <nav>
             <a href='/'>Nossas soluções</a>
             <a href='/'>Conheça a Jüssi</a>
@@ -21,11 +42,11 @@ const Header = () => {
               <input
                 type='text'
                 name='search'
-                value=''
+                value={searchValue}
                 placeholder='Buscar'
-                onChange=''
+                onChange={handleSearch}
               />
-              <img src={search} alt='search' onClick='' />
+              <img src={Search} alt='search' onClick={search} />
             </div>
             <a href='/'>Login</a>
             <a href='/'>
