@@ -1,3 +1,10 @@
+To test the API you can type in the search bar any of the following words: 
+Eureka! - The Big Bang Query,
+Girls,
+The Office,
+This is Us,
+Cops.
+
 ## Available Scripts
 
 In the project directory, you can run:
