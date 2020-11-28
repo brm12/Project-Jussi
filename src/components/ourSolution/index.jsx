@@ -10,7 +10,7 @@ const OurSolution = () => {
 
   useEffect(() => {
     api
-      .get(`/users`)
+      .get(`/shows?q=homeland`)
       .then((response) => {
         setProductList(response.data);
         console.log(response.data);
@@ -30,7 +30,7 @@ const OurSolution = () => {
         <div className='productList'>
           {state.length > 0 &&
             state.map((product) => (
-              <Product key={product.id} product={product} />
+              <Product key={product.index} product={product} />
             ))}
         </div>
       </Card>

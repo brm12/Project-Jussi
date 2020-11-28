@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://api.mocki.io/v1",
+  baseURL: "http://api.tvmaze.com/search",
   timeout: 10000,
 });
 

@@ -6,5 +6,21 @@ $base-color: #000000;
   h1.products {
     color: $base-color;
     text-transform: uppercase;
+
+    .icon {
+      color: #03ffa5;
+      font-family: Barlow;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 40px;
+      text-transform: uppercase;
+    }
+  }
+
+  .productList {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 25% 25% 25% 25%;
   }
 }

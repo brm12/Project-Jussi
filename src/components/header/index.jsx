@@ -13,7 +13,7 @@ const Header = () => {
   function search() {
     if (searchValue.length > 3) {
       api
-        .get(`${searchValue}.json`)
+        .get(`/shows?q=${searchValue}`)
         .then((response) => {
           setProductList(response.data);
         })
